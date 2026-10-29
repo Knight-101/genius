@@ -1,0 +1,860 @@
+keyword,account_type,subtype
+cash,asset,cash
+cash in hand,asset,cash
+cash on hand,asset,cash
+petty cash,asset,cash
+cash balance,asset,cash
+till cash,asset,cash
+cash at office,asset,cash
+cash a/c,asset,cash
+bank,asset,bank
+bank account,asset,bank
+current account,asset,bank
+current a/c,asset,bank
+savings account,asset,bank
+savings a/c,asset,bank
+hdfc,asset,bank
+icici,asset,bank
+sbi,asset,bank
+state bank,asset,bank
+axis bank,asset,bank
+kotak,asset,bank
+yes bank,asset,bank
+idfc,asset,bank
+dbs,asset,bank
+ocbc,asset,bank
+uob,asset,bank
+citibank,asset,bank
+hsbc,asset,bank
+standard chartered,asset,bank
+bank balance,asset,bank
+bank current,asset,bank
+bank a/c,asset,bank
+collection account,asset,bank
+escrow account,asset,bank
+payment gateway receivable,asset,bank
+razorpay,asset,bank
+paytm,asset,bank
+upi,asset,bank
+wallet balance,asset,bank
+fixed deposit,asset,bank
+fd with bank,asset,bank
+term deposit,asset,bank
+margin money,asset,bank
+sundry debtors,asset,receivable
+debtors,asset,receivable
+trade receivables,asset,receivable
+trade receivable,asset,receivable
+accounts receivable,asset,receivable
+a/r,asset,receivable
+receivables,asset,receivable
+customers control,asset,receivable
+customer control,asset,receivable
+book debts,asset,receivable
+bills receivable,asset,receivable
+debtor,asset,receivable
+accounts receivable control,asset,receivable
+sundry debtors control,asset,receivable
+unbilled revenue,asset,unbilled_revenue
+accrued revenue,asset,unbilled_revenue
+work in progress receivable,asset,unbilled_revenue
+contract asset,asset,unbilled_revenue
+unbilled receivable,asset,unbilled_revenue
+retention receivable,asset,unbilled_revenue
+retention money receivable,asset,unbilled_revenue
+inventory,asset,inventory
+stock,asset,inventory
+stock in trade,asset,inventory
+stock-in-trade,asset,inventory
+closing stock,asset,inventory
+finished goods,asset,inventory
+raw material stock,asset,inventory
+raw materials,asset,inventory
+work in progress,asset,inventory
+wip,asset,inventory
+traded goods stock,asset,inventory
+goods in transit,asset,inventory
+stores and spares,asset,inventory
+consumables stock,asset,inventory
+packing material stock,asset,inventory
+merchandise inventory,asset,inventory
+prepaid,asset,prepaid
+prepaid expenses,asset,prepaid
+prepaid insurance,asset,prepaid
+prepaid rent,asset,prepaid
+deferred expenses,asset,prepaid
+advance tax,asset,prepaid
+advance income tax,asset,prepaid
+tax paid in advance,asset,prepaid
+security deposit paid,asset,prepaid
+rent deposit,asset,prepaid
+deposits paid,asset,prepaid
+lease deposit,asset,prepaid
+earnest money,asset,prepaid
+advance to supplier,asset,advance_paid
+advance to suppliers,asset,advance_paid
+supplier advance,asset,advance_paid
+advances paid,asset,advance_paid
+advance to vendors,asset,advance_paid
+advance paid to,asset,advance_paid
+advances to suppliers,asset,advance_paid
+advance for purchase,asset,advance_paid
+loans and advances,asset,advance_paid
+staff advance,asset,advance_paid
+employee advance,asset,advance_paid
+advance to employees,asset,advance_paid
+salary advance,asset,advance_paid
+gst input,asset,input_tax
+input gst,asset,input_tax
+input tax credit,asset,input_tax
+itc,asset,input_tax
+cgst input,asset,input_tax
+sgst input,asset,input_tax
+igst input,asset,input_tax
+gst receivable,asset,input_tax
+vat input,asset,input_tax
+input vat,asset,input_tax
+gst credit,asset,input_tax
+gst recoverable,asset,input_tax
+input tax,asset,input_tax
+gst paid on purchases,asset,input_tax
+igst receivable,asset,input_tax
+gst refund receivable,asset,input_tax
+gst itc,asset,input_tax
+fixed assets,asset,fixed_asset
+plant and machinery,asset,fixed_asset
+plant & machinery,asset,fixed_asset
+machinery,asset,fixed_asset
+machine,asset,fixed_asset
+vehicles,asset,fixed_asset
+vehicle,asset,fixed_asset
+motor vehicles,asset,fixed_asset
+furniture,asset,fixed_asset
+furniture and fixtures,asset,fixed_asset
+office equipment,asset,fixed_asset
+computers,asset,fixed_asset
+computer equipment,asset,fixed_asset
+laptops,asset,fixed_asset
+buildings,asset,fixed_asset
+building,asset,fixed_asset
+land,asset,fixed_asset
+land and building,asset,fixed_asset
+leasehold improvements,asset,fixed_asset
+tools and equipment,asset,fixed_asset
+capital work in progress,asset,fixed_asset
+cwip,asset,fixed_asset
+fixed asset,asset,fixed_asset
+equipment,asset,fixed_asset
+delivery vans,asset,fixed_asset
+trucks,asset,fixed_asset
+forklift,asset,fixed_asset
+racking,asset,fixed_asset
+warehouse equipment,asset,fixed_asset
+software license,asset,fixed_asset
+intangible assets,asset,fixed_asset
+goodwill,asset,fixed_asset
+patents,asset,fixed_asset
+trademark,asset,fixed_asset
+accumulated depreciation,asset,accumulated_depreciation
+provision for depreciation,asset,accumulated_depreciation
+acc depreciation,asset,accumulated_depreciation
+acc. depreciation,asset,accumulated_depreciation
+depreciation reserve,asset,accumulated_depreciation
+accumulated amortisation,asset,accumulated_depreciation
+accumulated amortization,asset,accumulated_depreciation
+other current assets,asset,other_asset
+sundry assets,asset,other_asset
+miscellaneous assets,asset,other_asset
+loan to,asset,other_asset
+loans given,asset,other_asset
+investments,asset,other_asset
+investment in,asset,other_asset
+mutual funds,asset,other_asset
+due from director,asset,other_asset
+due from related party,asset,other_asset
+related party receivable,asset,other_asset
+interest receivable,asset,other_asset
+accrued income,asset,other_asset
+rent receivable,asset,other_asset
+tds receivable,asset,other_asset
+tds recoverable,asset,other_asset
+tcs receivable,asset,other_asset
+advance to director,asset,other_asset
+sundry creditors,liability,payable
+creditors,liability,payable
+trade payables,liability,payable
+trade payable,liability,payable
+accounts payable,liability,payable
+a/p,liability,payable
+payables,liability,payable
+suppliers control,liability,payable
+vendors control,liability,payable
+bills payable,liability,payable
+creditor,liability,payable
+accounts payable control,liability,payable
+sundry creditors control,liability,payable
+trade creditors,liability,payable
+payable to suppliers,liability,payable
+msme creditors,liability,payable
+msme payables,liability,payable
+accrued expenses,liability,accrued
+outstanding expenses,liability,accrued
+expenses payable,liability,accrued
+salary payable,liability,accrued
+salaries payable,liability,accrued
+wages payable,liability,accrued
+rent payable,liability,accrued
+audit fee payable,liability,accrued
+provision for expenses,liability,accrued
+accrued liabilities,liability,accrued
+interest payable,liability,accrued
+electricity payable,liability,accrued
+bonus payable,liability,accrued
+outstanding salary,liability,accrued
+outstanding rent,liability,accrued
+accrued salaries,liability,accrued
+commission payable,liability,accrued
+provision for bonus,liability,accrued
+gratuity payable,liability,accrued
+provision for gratuity,liability,accrued
+leave encashment payable,liability,accrued
+cash credit,liability,short_term_debt
+cc a/c,liability,short_term_debt
+cc account,liability,short_term_debt
+cc limit,liability,short_term_debt
+overdraft,liability,short_term_debt
+bank overdraft,liability,short_term_debt
+od a/c,liability,short_term_debt
+od account,liability,short_term_debt
+working capital loan,liability,short_term_debt
+working capital demand loan,liability,short_term_debt
+wcdl,liability,short_term_debt
+short term loan,liability,short_term_debt
+short term borrowings,liability,short_term_debt
+short-term borrowings,liability,short_term_debt
+packing credit,liability,short_term_debt
+bill discounting,liability,short_term_debt
+invoice discounting,liability,short_term_debt
+factoring,liability,short_term_debt
+revolving credit,liability,short_term_debt
+credit line,liability,short_term_debt
+line of credit,liability,short_term_debt
+trade finance,liability,short_term_debt
+export packing credit,liability,short_term_debt
+bank borrowing,liability,short_term_debt
+current portion of long term debt,liability,short_term_debt
+cc loan,liability,short_term_debt
+hdfc cc,liability,short_term_debt
+icici cc,liability,short_term_debt
+sbi cc,liability,short_term_debt
+term loan,liability,long_term_debt
+long term loan,liability,long_term_debt
+long term borrowings,liability,long_term_debt
+long-term borrowings,liability,long_term_debt
+bank loan,liability,long_term_debt
+secured loan,liability,long_term_debt
+unsecured loan,liability,long_term_debt
+vehicle loan,liability,long_term_debt
+car loan,liability,long_term_debt
+machinery loan,liability,long_term_debt
+equipment loan,liability,long_term_debt
+mortgage,liability,long_term_debt
+debentures,liability,long_term_debt
+loan from bank,liability,long_term_debt
+business loan,liability,long_term_debt
+msme loan,liability,long_term_debt
+mudra loan,liability,long_term_debt
+loan from director,liability,long_term_debt
+loan from promoters,liability,long_term_debt
+loan from shareholders,liability,long_term_debt
+directors loan,liability,long_term_debt
+hire purchase,liability,long_term_debt
+finance lease liability,liability,long_term_debt
+lease liability,liability,long_term_debt
+loan payable,liability,long_term_debt
+borrowings,liability,long_term_debt
+gst output,liability,tax_payable
+output gst,liability,tax_payable
+gst payable,liability,tax_payable
+cgst output,liability,tax_payable
+sgst output,liability,tax_payable
+igst output,liability,tax_payable
+output tax,liability,tax_payable
+vat payable,liability,tax_payable
+output vat,liability,tax_payable
+gst liability,liability,tax_payable
+gst collected,liability,tax_payable
+tax payable,liability,tax_payable
+income tax payable,liability,tax_payable
+provision for tax,liability,tax_payable
+provision for income tax,liability,tax_payable
+gst output payable,liability,tax_payable
+sales tax payable,liability,tax_payable
+service tax payable,liability,tax_payable
+gst on sales,liability,tax_payable
+tds payable,liability,statutory
+tds,liability,statutory
+tcs payable,liability,statutory
+pf payable,liability,statutory
+provident fund payable,liability,statutory
+provident fund,liability,statutory
+epf payable,liability,statutory
+esi payable,liability,statutory
+esic payable,liability,statutory
+esi,liability,statutory
+professional tax payable,liability,statutory
+professional tax,liability,statutory
+cpf payable,liability,statutory
+cpf,liability,statutory
+sdl payable,liability,statutory
+labour welfare fund,liability,statutory
+statutory dues,liability,statutory
+statutory liabilities,liability,statutory
+withholding tax payable,liability,statutory
+gratuity fund,liability,statutory
+salary deductions payable,liability,statutory
+pt payable,liability,statutory
+employee deductions payable,liability,statutory
+customer advance,liability,customer_advance
+advance from customers,liability,customer_advance
+advances from customers,liability,customer_advance
+advance received,liability,customer_advance
+customer deposits,liability,customer_advance
+deposits received,liability,customer_advance
+unearned revenue,liability,customer_advance
+deferred revenue,liability,customer_advance
+advance against orders,liability,customer_advance
+customer credit balance,liability,customer_advance
+security deposit received,liability,customer_advance
+booking advance,liability,customer_advance
+advance from buyers,liability,customer_advance
+income received in advance,liability,customer_advance
+contract liability,liability,customer_advance
+other current liabilities,liability,other_liability
+sundry liabilities,liability,other_liability
+miscellaneous liabilities,liability,other_liability
+due to director,liability,other_liability
+due to related party,liability,other_liability
+related party payable,liability,other_liability
+dividend payable,liability,other_liability
+suspense,liability,other_liability
+clearing account,liability,other_liability
+payments in transit,liability,other_liability
+unreconciled,liability,other_liability
+unallocated receipts,liability,other_liability
+director current account,liability,other_liability
+stock transfer in transit,liability,other_liability
+capital,equity,capital
+owner's capital,equity,capital
+owners capital,equity,capital
+proprietor capital,equity,capital
+partners capital,equity,capital
+share capital,equity,capital
+paid up capital,equity,capital
+paid-up capital,equity,capital
+equity capital,equity,capital
+capital account,equity,capital
+promoter capital,equity,capital
+opening balance equity,equity,capital
+opening balance adjustments,equity,capital
+equity shares,equity,capital
+share application,equity,capital
+capital introduced,equity,capital
+capital contribution,equity,capital
+retained earnings,equity,reserves
+reserves and surplus,equity,reserves
+reserves & surplus,equity,reserves
+profit and loss account,equity,reserves
+profit & loss a/c,equity,reserves
+p&l a/c,equity,reserves
+accumulated profit,equity,reserves
+general reserve,equity,reserves
+surplus,equity,reserves
+revaluation reserve,equity,reserves
+securities premium,equity,reserves
+reserve,equity,reserves
+profit and loss appropriation,equity,reserves
+undistributed profit,equity,reserves
+current year earnings,equity,reserves
+drawings,equity,drawings
+owner's drawings,equity,drawings
+owners drawings,equity,drawings
+proprietor drawings,equity,drawings
+partners drawings,equity,drawings
+personal drawings,equity,drawings
+dividend paid,equity,drawings
+dividends,equity,drawings
+owner withdrawals,equity,drawings
+withdrawals by owner,equity,drawings
+director drawings,equity,drawings
+owner personal,equity,drawings
+owner personal expenses,equity,drawings
+partner current account,equity,drawings
+distribution to owners,equity,drawings
+drawings account,equity,drawings
+sales,income,revenue
+revenue,income,revenue
+sales - trading goods,income,revenue
+sales of goods,income,revenue
+product sales,income,revenue
+service revenue,income,revenue
+service income,income,revenue
+services rendered,income,revenue
+fee income,income,revenue
+consulting income,income,revenue
+consulting revenue,income,revenue
+professional fees income,income,revenue
+subscription revenue,income,revenue
+subscription income,income,revenue
+commission income,income,revenue
+commission received,income,revenue
+turnover,income,revenue
+net sales,income,revenue
+domestic sales,income,revenue
+export sales,income,revenue
+local sales,income,revenue
+interstate sales,income,revenue
+sales account,income,revenue
+sales - domestic,income,revenue
+sales - export,income,revenue
+sales of services,income,revenue
+project revenue,income,revenue
+contract revenue,income,revenue
+labour charges income,income,revenue
+installation income,income,revenue
+amc income,income,revenue
+maintenance income,income,revenue
+licence fees,income,revenue
+license fees,income,revenue
+usage revenue,income,revenue
+airtime revenue,income,revenue
+data revenue,income,revenue
+recurring revenue,income,revenue
+retainer fees,income,revenue
+sales return,income,sales_returns
+sales returns,income,sales_returns
+returns inward,income,sales_returns
+credit notes issued,income,sales_returns
+sales discount,income,sales_returns
+discount allowed,income,sales_returns
+trade discount allowed,income,sales_returns
+cash discount allowed,income,sales_returns
+rebates allowed,income,sales_returns
+sales allowances,income,sales_returns
+sales rebates,income,sales_returns
+discounts given,income,sales_returns
+scheme discount,income,sales_returns
+other income,income,other_income
+interest income,income,other_income
+interest received,income,other_income
+interest earned,income,other_income
+rent income,income,other_income
+rent received,income,other_income
+dividend income,income,other_income
+discount received,income,other_income
+commission earned,income,other_income
+profit on sale of asset,income,other_income
+gain on sale,income,other_income
+gain on disposal,income,other_income
+scrap sales,income,other_income
+scrap income,income,other_income
+miscellaneous income,income,other_income
+insurance claim received,income,other_income
+foreign exchange gain,income,other_income
+forex gain,income,other_income
+exchange gain,income,other_income
+sundry income,income,other_income
+incentive received,income,other_income
+subsidy received,income,other_income
+grant income,income,other_income
+duty drawback,income,other_income
+refund received,income,other_income
+write back,income,other_income
+provisions written back,income,other_income
+bad debts recovered,income,other_income
+round off income,income,other_income
+rounding off income,income,other_income
+cost of goods sold,expense,cogs
+cogs,expense,cogs
+cost of sales,expense,cogs
+purchases,expense,cogs
+purchase,expense,cogs
+purchases - trading goods,expense,cogs
+purchase account,expense,cogs
+raw material consumed,expense,cogs
+materials consumed,expense,cogs
+direct materials,expense,cogs
+direct expenses,expense,cogs
+direct costs,expense,cogs
+freight inward,expense,cogs
+carriage inward,expense,cogs
+inward freight,expense,cogs
+import duty,expense,cogs
+customs duty,expense,cogs
+clearing and forwarding,expense,cogs
+packing materials consumed,expense,cogs
+manufacturing expenses,expense,cogs
+factory expenses,expense,cogs
+production expenses,expense,cogs
+job work charges,expense,cogs
+subcontractor costs,expense,cogs
+sub-contractor,expense,cogs
+contractor charges,expense,cogs
+direct labour,expense,cogs
+wages direct,expense,cogs
+cost of services,expense,cogs
+cost of revenue,expense,cogs
+stock adjustment,expense,cogs
+opening stock,expense,cogs
+closing stock adjustment,expense,cogs
+purchase of goods,expense,cogs
+goods purchased,expense,cogs
+traded goods purchases,expense,cogs
+consumables,expense,cogs
+stores consumed,expense,cogs
+loading and unloading,expense,cogs
+hosting costs,expense,cogs
+cloud infrastructure,expense,cogs
+data costs,expense,cogs
+bandwidth costs,expense,cogs
+network costs,expense,cogs
+interconnect charges,expense,cogs
+spectrum charges,expense,cogs
+subscriber acquisition,expense,cogs
+purchase return,expense,purchase_returns
+purchase returns,expense,purchase_returns
+returns outward,expense,purchase_returns
+debit notes issued,expense,purchase_returns
+purchase discount,expense,purchase_returns
+discount received on purchases,expense,purchase_returns
+salaries,expense,payroll
+salary,expense,payroll
+salaries and wages,expense,payroll
+salaries & wages,expense,payroll
+wages,expense,payroll
+payroll,expense,payroll
+staff cost,expense,payroll
+staff costs,expense,payroll
+employee cost,expense,payroll
+employee costs,expense,payroll
+employee benefits,expense,payroll
+staff welfare,expense,payroll
+bonus,expense,payroll
+gratuity,expense,payroll
+provident fund contribution,expense,payroll
+pf contribution,expense,payroll
+esi contribution,expense,payroll
+employer cpf,expense,payroll
+cpf contribution,expense,payroll
+directors remuneration,expense,payroll
+director remuneration,expense,payroll
+managerial remuneration,expense,payroll
+overtime,expense,payroll
+incentives,expense,payroll
+commission to staff,expense,payroll
+sales commission,expense,payroll
+contract labour,expense,payroll
+casual labour,expense,payroll
+employee insurance,expense,payroll
+staff training,expense,payroll
+recruitment,expense,payroll
+leave encashment,expense,payroll
+leave travel,expense,payroll
+staff uniform,expense,payroll
+sdl expense,expense,payroll
+benefits in kind,expense,payroll
+rent,expense,rent
+rent expense,expense,rent
+office rent,expense,rent
+warehouse rent,expense,rent
+godown rent,expense,rent
+shop rent,expense,rent
+premises rent,expense,rent
+lease rent,expense,rent
+lease payments,expense,rent
+rental expense,expense,rent
+rent and rates,expense,rent
+rates and taxes,expense,rent
+property tax,expense,rent
+co-working fees,expense,rent
+storage rent,expense,rent
+factory rent,expense,rent
+equipment rental,expense,rent
+vehicle hire,expense,rent
+hire charges,expense,rent
+electricity,expense,utilities
+electricity charges,expense,utilities
+power and fuel,expense,utilities
+power & fuel,expense,utilities
+water charges,expense,utilities
+utilities,expense,utilities
+telephone,expense,utilities
+telephone expenses,expense,utilities
+mobile expenses,expense,utilities
+internet,expense,utilities
+internet charges,expense,utilities
+broadband,expense,utilities
+communication expenses,expense,utilities
+gas charges,expense,utilities
+diesel,expense,utilities
+fuel,expense,utilities
+generator fuel,expense,utilities
+power charges,expense,utilities
+telecom expenses,expense,utilities
+utility expenses,expense,utilities
+water and electricity,expense,utilities
+freight outward,expense,freight_out
+carriage outward,expense,freight_out
+outward freight,expense,freight_out
+freight and forwarding,expense,freight_out
+freight & forwarding,expense,freight_out
+delivery charges,expense,freight_out
+transport expenses,expense,freight_out
+transportation,expense,freight_out
+transport charges,expense,freight_out
+logistics,expense,freight_out
+logistics expenses,expense,freight_out
+courier,expense,freight_out
+courier charges,expense,freight_out
+shipping charges,expense,freight_out
+shipping and handling,expense,freight_out
+distribution expenses,expense,freight_out
+vehicle running expenses,expense,freight_out
+vehicle expenses,expense,freight_out
+fuel and vehicle,expense,freight_out
+tempo hire,expense,freight_out
+truck hire,expense,freight_out
+last mile delivery,expense,freight_out
+packing and forwarding,expense,freight_out
+octroi,expense,freight_out
+toll charges,expense,freight_out
+freight,expense,freight_out
+marketing,expense,marketing
+advertising,expense,marketing
+advertisement,expense,marketing
+advertising expenses,expense,marketing
+marketing expenses,expense,marketing
+promotion expenses,expense,marketing
+sales promotion,expense,marketing
+business promotion,expense,marketing
+trade shows,expense,marketing
+exhibition expenses,expense,marketing
+brand promotion,expense,marketing
+digital marketing,expense,marketing
+social media marketing,expense,marketing
+google ads,expense,marketing
+facebook ads,expense,marketing
+seo,expense,marketing
+sponsorship,expense,marketing
+samples and promotion,expense,marketing
+dealer incentives,expense,marketing
+scheme expenses,expense,marketing
+marketing spend,expense,marketing
+commission to agents,expense,marketing
+customer acquisition costs,expense,marketing
+professional fees,expense,professional_fees
+professional charges,expense,professional_fees
+consultancy fees,expense,professional_fees
+consultancy charges,expense,professional_fees
+legal fees,expense,professional_fees
+legal expenses,expense,professional_fees
+audit fees,expense,professional_fees
+audit fee,expense,professional_fees
+accounting fees,expense,professional_fees
+accounting charges,expense,professional_fees
+secretarial charges,expense,professional_fees
+tax consultant fees,expense,professional_fees
+legal and professional,expense,professional_fees
+professional and legal,expense,professional_fees
+retainer expenses,expense,professional_fees
+architect fees,expense,professional_fees
+advisory fees,expense,professional_fees
+compliance fees,expense,professional_fees
+registration fees,expense,professional_fees
+roc fees,expense,professional_fees
+licence and registration,expense,professional_fees
+repairs and maintenance,expense,repairs
+repairs & maintenance,expense,repairs
+repair and maintenance,expense,repairs
+maintenance,expense,repairs
+repairs,expense,repairs
+building maintenance,expense,repairs
+machinery maintenance,expense,repairs
+vehicle maintenance,expense,repairs
+computer maintenance,expense,repairs
+amc charges,expense,repairs
+annual maintenance,expense,repairs
+servicing,expense,repairs
+equipment maintenance,expense,repairs
+housekeeping,expense,repairs
+security charges,expense,repairs
+cleaning charges,expense,repairs
+pest control,expense,repairs
+insurance,expense,insurance
+insurance expense,expense,insurance
+insurance premium,expense,insurance
+fire insurance,expense,insurance
+marine insurance,expense,insurance
+vehicle insurance,expense,insurance
+stock insurance,expense,insurance
+medical insurance,expense,insurance
+keyman insurance,expense,insurance
+liability insurance,expense,insurance
+group insurance,expense,insurance
+insurance charges,expense,insurance
+bank charges,expense,bank_charges
+bank charge,expense,bank_charges
+bank fees,expense,bank_charges
+bank commission,expense,bank_charges
+processing fees,expense,bank_charges
+loan processing fees,expense,bank_charges
+payment gateway fees,expense,bank_charges
+gateway charges,expense,bank_charges
+merchant fees,expense,bank_charges
+pg charges,expense,bank_charges
+service charges,expense,bank_charges
+collection charges,expense,bank_charges
+lc charges,expense,bank_charges
+guarantee commission,expense,bank_charges
+cheque bounce charges,expense,bank_charges
+bank interest and charges,expense,bank_charges
+forex charges,expense,bank_charges
+transaction charges,expense,bank_charges
+razorpay fees,expense,bank_charges
+paytm charges,expense,bank_charges
+card charges,expense,bank_charges
+credit card charges,expense,bank_charges
+neft charges,expense,bank_charges
+demand draft charges,expense,bank_charges
+interest expense,expense,finance_cost
+interest on cc,expense,finance_cost
+interest on cash credit,expense,finance_cost
+interest on loan,expense,finance_cost
+interest on term loan,expense,finance_cost
+interest paid,expense,finance_cost
+interest on overdraft,expense,finance_cost
+finance cost,expense,finance_cost
+finance costs,expense,finance_cost
+finance charges,expense,finance_cost
+interest and finance charges,expense,finance_cost
+interest on borrowings,expense,finance_cost
+interest on od,expense,finance_cost
+loan interest,expense,finance_cost
+interest on working capital,expense,finance_cost
+interest on vehicle loan,expense,finance_cost
+interest on unsecured loan,expense,finance_cost
+discounting charges,expense,finance_cost
+interest on delayed payment,expense,finance_cost
+interest on late payment,expense,finance_cost
+interest on tds,expense,finance_cost
+interest on gst,expense,finance_cost
+interest,expense,finance_cost
+depreciation,expense,depreciation
+depreciation expense,expense,depreciation
+depreciation and amortisation,expense,depreciation
+depreciation & amortization,expense,depreciation
+amortisation,expense,depreciation
+amortization,expense,depreciation
+amortisation expense,expense,depreciation
+depreciation on fixed assets,expense,depreciation
+depreciation a/c,expense,depreciation
+dep expense,expense,depreciation
+income tax expense,expense,tax_expense
+income tax,expense,tax_expense
+provision for taxation,expense,tax_expense
+current tax,expense,tax_expense
+deferred tax,expense,tax_expense
+tax expense,expense,tax_expense
+corporate tax,expense,tax_expense
+tax on profits,expense,tax_expense
+income-tax,expense,tax_expense
+taxation,expense,tax_expense
+travel,expense,travel
+travelling,expense,travel
+travelling expenses,expense,travel
+travel expenses,expense,travel
+conveyance,expense,travel
+conveyance expenses,expense,travel
+local conveyance,expense,travel
+tour expenses,expense,travel
+air fare,expense,travel
+hotel expenses,expense,travel
+lodging and boarding,expense,travel
+business travel,expense,travel
+fuel reimbursement,expense,travel
+travel and entertainment,expense,travel
+entertainment,expense,travel
+client entertainment,expense,travel
+food and beverages,expense,travel
+staff meals,expense,travel
+gifts,expense,travel
+gifts and donations,expense,travel
+bad debts,expense,bad_debt
+bad debt,expense,bad_debt
+bad debts written off,expense,bad_debt
+bad debt expense,expense,bad_debt
+provision for doubtful debts,expense,bad_debt
+doubtful debts,expense,bad_debt
+provision for bad debts,expense,bad_debt
+allowance for doubtful accounts,expense,bad_debt
+expected credit loss,expense,bad_debt
+write off,expense,bad_debt
+receivables written off,expense,bad_debt
+irrecoverable debts,expense,bad_debt
+office expenses,expense,admin
+office expense,expense,admin
+administrative expenses,expense,admin
+administration expenses,expense,admin
+general expenses,expense,admin
+miscellaneous expenses,expense,admin
+misc expenses,expense,admin
+printing and stationery,expense,admin
+stationery,expense,admin
+printing,expense,admin
+postage,expense,admin
+postage and courier,expense,admin
+subscription,expense,admin
+subscriptions,expense,admin
+membership fees,expense,admin
+software subscriptions,expense,admin
+software expenses,expense,admin
+it expenses,expense,admin
+website expenses,expense,admin
+hosting charges,expense,admin
+donations,expense,admin
+csr expenses,expense,admin
+charity,expense,admin
+penalty,expense,admin
+penalties,expense,admin
+fines,expense,admin
+late fees,expense,admin
+gst late fee,expense,admin
+late filing fee,expense,admin
+interest and penalty,expense,admin
+sundry expenses,expense,admin
+round off,expense,admin
+rounding off,expense,admin
+rounding,expense,admin
+exchange loss,expense,admin
+forex loss,expense,admin
+exchange difference,expense,admin
+loss on sale of asset,expense,admin
+loss on disposal,expense,admin
+stock written off,expense,admin
+stock loss,expense,admin
+shrinkage,expense,admin
+damaged goods,expense,admin
+obsolescence,expense,admin
+inventory write down,expense,admin
+write down,expense,admin
+preliminary expenses,expense,admin
+rates and taxes expense,expense,admin
+licence fees expense,expense,admin
+tea and refreshments,expense,admin
+pantry,expense,admin
+uniform,expense,admin
+security,expense,admin
+water,expense,admin
+office maintenance,expense,admin
+bank reconciliation difference,expense,admin
+owner personal expense,expense,admin

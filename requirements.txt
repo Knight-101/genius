@@ -1,0 +1,10 @@
+gradio==6.30.0
+lightgbm>=4.3,<5
+numpy>=1.26,<3
+pandas>=2.1,<4
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+threadpoolctl>=3.1
+openpyxl>=3.1
+plotly>=5
+pytest>=8

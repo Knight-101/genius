@@ -1,0 +1,240 @@
+field,alias
+date,date
+date,txn date
+date,trans date
+date,tran date
+date,transaction date
+date,journal date
+date,voucher date
+date,vch date
+date,posting date
+date,entry date
+date,doc date
+date,document date
+date,value date
+date,dt
+date,day
+date,booking date
+date,accounting date
+entry_no,journal no
+entry_no,journal #
+entry_no,journal number
+entry_no,jv no
+entry_no,jv
+entry_no,jv number
+entry_no,voucher no
+entry_no,voucher number
+entry_no,vch no
+entry_no,vch number
+entry_no,entry no
+entry_no,entry number
+entry_no,entry #
+entry_no,txn id
+entry_no,transaction id
+entry_no,transaction no
+entry_no,doc no
+entry_no,document no
+entry_no,trans no
+entry_no,journal id
+entry_no,voucher id
+entry_no,vr no
+account,account
+account,account name
+account,ledger
+account,ledger name
+account,name of ledger
+account,particulars
+account,account head
+account,head of account
+account,head
+account,gl account
+account,gl
+account,account title
+account,chart of accounts
+account,coa
+account,account code name
+account,general ledger
+account,a/c
+account,ac name
+account,a/c name
+debit,debit
+debit,debits
+debit,dr
+debit,debit amount
+debit,dr amount
+debit,debit amt
+debit,debit inr
+debit,debit sgd
+debit,debit (inr)
+debit,debit (sgd)
+debit,debit (rs)
+debit,dr (inr)
+debit,dr.
+debit,amount dr
+debit,amount debit
+credit,credit
+credit,credits
+credit,cr
+credit,credit amount
+credit,cr amount
+credit,credit amt
+credit,credit inr
+credit,credit sgd
+credit,credit (inr)
+credit,credit (sgd)
+credit,credit (rs)
+credit,cr (inr)
+credit,cr.
+credit,amount cr
+credit,amount credit
+amount,amount
+amount,amt
+amount,value
+amount,transaction amount
+amount,txn amount
+amount,net amount
+amount,amount inr
+amount,amount sgd
+amount,amount (inr)
+amount,amount (sgd)
+amount,amount (rs)
+amount,total amount
+amount,sum
+drcr,dr/cr
+drcr,drcr
+drcr,dr cr
+drcr,type
+drcr,debit/credit
+drcr,dc
+drcr,d/c
+drcr,side
+drcr,nature
+drcr,dr or cr
+drcr,debit or credit
+drcr,entry side
+drcr,dr/cr type
+party,party
+party,party name
+party,contact
+party,contact name
+party,customer
+party,vendor
+party,supplier
+party,customer/vendor
+party,customer vendor
+party,customer name
+party,vendor name
+party,supplier name
+party,client
+party,client name
+party,counterparty
+party,payee
+party,payer
+party,sub ledger
+party,subledger
+party,sub-ledger
+party,debtor/creditor
+party,name
+party,customer/supplier
+party,buyer
+party,seller
+invoice_ref,invoice
+invoice_ref,invoice no
+invoice_ref,invoice number
+invoice_ref,invoice #
+invoice_ref,inv no
+invoice_ref,inv #
+invoice_ref,bill no
+invoice_ref,bill number
+invoice_ref,bill #
+invoice_ref,bill ref
+invoice_ref,reference
+invoice_ref,reference no
+invoice_ref,reference number
+invoice_ref,reference#
+invoice_ref,ref
+invoice_ref,ref no
+invoice_ref,ref.
+invoice_ref,doc ref
+invoice_ref,document ref
+invoice_ref,bill/invoice no
+invoice_ref,invoice ref
+invoice_ref,tax invoice no
+invoice_ref,bill reference
+due_date,due date
+due_date,due
+due_date,due on
+due_date,bill due
+due_date,bill due date
+due_date,payment due
+due_date,payment due date
+due_date,due dt
+due_date,maturity date
+due_date,pay by
+due_date,credit due date
+due_date,invoice due date
+due_date,due by
+narration,narration
+narration,description
+narration,notes
+narration,note
+narration,memo
+narration,remarks
+narration,details
+narration,comments
+narration,text
+narration,transaction details
+narration,narrative
+narration,line description
+voucher_type,voucher type
+voucher_type,vch type
+voucher_type,type of voucher
+voucher_type,journal type
+voucher_type,transaction type
+voucher_type,txn type
+voucher_type,doc type
+voucher_type,document type
+voucher_type,source
+voucher_type,entry source
+voucher_type,voucher kind
+voucher_type,vtype
+counter_account,counter account
+counter_account,counter ledger
+counter_account,against
+counter_account,against account
+counter_account,against ledger
+counter_account,contra
+counter_account,contra account
+counter_account,offset account
+counter_account,opposite account
+counter_account,corresponding account
+balance,balance
+balance,running balance
+balance,closing balance
+balance,bal
+balance,balance (inr)
+balance,balance (sgd)
+balance,closing bal
+currency,currency
+currency,ccy
+currency,curr
+currency,currency code
+cost_centre,cost center
+cost_centre,cost centre
+cost_centre,department
+cost_centre,project
+cost_centre,branch
+cost_centre,location
+cost_centre,class
+cost_centre,division
+cost_centre,segment
+group,group
+group,account group
+group,ledger group
+group,under
+group,parent
+group,parent account
+group,category
+group,account category
+group,account type
+group,head group

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+.env
+.env.*
+!.env.example
+.gradio/
+.DS_Store
+artifacts/
+genius_v5_app/
+.ipynb_checkpoints/
+Genius_v5_source.zip
