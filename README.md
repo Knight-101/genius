@@ -1,128 +1,95 @@
-# Genius v5.1 — separate Genius and Grit scores
+# Genius
 
-This version extends `Genius_working_prototype.ipynb`. The original notebook is unchanged.
+### Financial health, resilience and borrowing support for small businesses
 
-## Jupyter notebook
+Genius is a financial decision-support prototype proposed as an extension to **Zoho Books**, focused on Indian micro and small trading and distribution businesses. It turns accounting records into a view of financial standing, cash-flow pressure, business resilience and borrowing capacity.
 
-Open `Genius_v5_request_based.ipynb` in Jupyter or Google Colab and run all cells.
-It contains the source, configuration and synthetic samples, so it can run on its own.
-This repository includes exactly one notebook; the Python package below is the same code.
-A clean first run builds the synthetic database and trains the models.
+Distributors often pay suppliers before collecting from customers. Genius helps an owner understand that working-capital gap, identify what needs attention and explore financing that fits the business's repayment capacity. For a partner lender, it provides financial indicators, recovery evidence and a review workflow.
 
-## Run the Python files
+**Academic proof of concept · NUS BMF5342 · Synthetic demonstration data**
 
-```sh
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Knight-101/genius/blob/main/Genius_v5_request_based.ipynb)
+
+## What Genius does
+
+| Feature | Purpose |
+|---|---|
+| Accounting-data ingestion | Reads supported Tally and Zoho-style CSV/Excel exports and ledger-by-account workbooks; checks accounting integrity and data completeness. |
+| Genius Score | Summarises financial credit standing using financial indicators and coefficients learned from synthetic default outcomes. Data-quality gates and financial red flags constrain publication. |
+| Grit Score | Describes resilience through demonstrated recovery and financial capacity. It stays separate from Genius; without assessed setbacks, it is a capacity estimate. |
+| Peer comparisons | Compares a business with synthetic peers in its sector and MSME size band, widening the group when needed. |
+| Cash-flow and working-capital tools | Provides a 13-week cash projection, overdue-payment insights, supplier-payment analysis and early-payment calculations. |
+| Borrowing illustrations | Assesses a requested amount, product and duration using stressed cash flows, existing debt, lender policy and collateral where required. Shows interest, fees, net cash received and a repayment schedule. |
+| Second Opinion | Uses a separately trained ML model to assess future financial stress. Material disagreements can trigger lender review and tighter limits. |
+| Ask Genius and what-if analysis | Answers supported questions from the business's records and calculations, and re-scores selected financial improvements. Chat answers do not call an external LLM. |
+| Lender controls | Provides portfolio views, review queues and editable, versioned pricing and limit assumptions. |
+
+The proposed Zoho integration would place these insights alongside the owner's existing bookkeeping workflow. **This prototype reads uploaded exports; it does not connect to live Zoho accounts or lender systems.**
+
+## Try the prototype
+
+### Jupyter or Google Colab
+
+Open [Genius_v5_request_based.ipynb](Genius_v5_request_based.ipynb), or use the Colab button above, and run all cells.
+
+The single notebook includes the Python source, configuration and synthetic sample books. The first run builds a 5,000-firm synthetic database and trains the models, which may take several minutes. The final cell launches the Gradio interface and prints a temporary public link. That link requires the notebook runtime to remain running.
+
+### Python
+
+Use Python 3.10 or newer. A virtual environment is recommended.
+
+```bash
 python -m pip install -r requirements.txt
-python run.py --share
+python run.py
 ```
 
-The public Gradio link is temporary and needs the Python process and computer to remain online.
-Without `--share`, the app runs locally at `http://127.0.0.1:7861`.
-A clean first run builds the 5,000-firm synthetic database. Later runs load the local cache.
+Open `http://127.0.0.1:7861`. To create a temporary public preview, run `python run.py --share`.
 
-## Try the new flow
+### Suggested walkthrough
 
-1. Select **Kaveri Foods**, read the books, and get its credit standing.
-2. Open **Borrow**. Enter, for example, ₹500,000 and 60 days, then select **Calculate my quote**.
-3. See the requested amount, amount supported, annual rate, actual interest, full fees,
-   cash received after upfront fees, total cost and repayment schedule.
-4. Try an amount above the supported limit. The response identifies a **smaller alternative**;
-   it never labels the original request approved.
-5. Try **Medium term**, choose months, offer collateral and enter an estimated value.
-   The collateral value is unverified and the illustration remains conditional.
-6. Try **Sharma** or **Swift** to see cases that need review or fail policy checks.
+1. Select **Kaveri Foods**, press **Read the books**, confirm the details and get its credit standing.
+2. Explore **Genius**, **Grit**, the peer comparison and the score drivers.
+3. Open **Borrow**, enter **₹500,000** and **60 days**, then select **Calculate my quote**.
+4. Inspect the supported amount, interest, fees, total cost and repayment schedule. Try a larger request or a secured medium-term loan.
+5. Open **Demo: how resilience can affect credit pricing** for the constructed fast/slow recovery comparison.
 
-Changing the request, company or saved lender policy clears the old quote.
+Sharma Traders and Swift Freight provide other synthetic business conditions to explore. No real company records are supplied in the sample dataset.
 
-## Scoring changes
+## Resilience example
 
-- Financial indicators appear once. A monotone logistic model learns nonnegative risk
-  coefficients from the available synthetic 12-month default labels. Fixed measure-rating
-  thresholds remain assumptions; this release does not claim to learn every threshold.
-- The five data-integrity measures gate score publication instead of adding credit points.
-- Genius and Grit are kept separate. Genius learns financial risk coefficients only; the
-  financial-plus-recovery model remains an exploratory validation comparison, never the
-  deployed score. There is no invented blend weight between the two scores.
-- Grit retains its existing demonstrated-recovery / capacity calculation. With no assessed
-  setbacks it is a capacity estimate, explicitly labelled as such. Its weights are assumptions.
-- A separate **assumed demo policy** permits up to 50 bps of margin concession for unique,
-  recent, completed recovery evidence. It never changes Genius, calibrated PD or adds a size
-  bonus. Financial capacity indicators (already in Genius) are excluded from this concession.
-- Recovery strength is the mean of gap regained, sustained recovery, operating-funded recovery
-  and management response. Concession = 50 bps × max(0,(strength−50)/50) × n/(n+2) ×
-  2^(−age_months/24), capped at available margin. Require quality ≥85, an assessed setback
-  within 24 months and no unresolved setback. Missing evidence means zero concession, not a penalty.
-- `resilience_demo.py` constructs two operating histories using identical 45% two-month demand
-  shocks but different recovery speed, cost flexibility, collections response and additional
-  borrowing. Grit is calculated by the existing detector, not assigned. Raw histories are in
-  `samples/synthetic_resilience_histories.csv`; these are operating signals, not balanced ledger exports.
-- The Borrow demo compares identical current financial inputs and a ₹5 lakh / 60-day request:
-  Genius 65 in both, Grit about 74 vs 54; rates about 14.82% vs 14.95% under the reference policy.
-  Both support ₹5 lakh. This isolates an assumed policy effect, not incremental default prediction.
-- The existing 5,000-firm cash-flow simulator already includes latent resilience, recovery speed,
-  cost response and cash buffers. Its historical outcomes have not been rewritten to make Grit win.
-- Train feature months are 11–47, with 12-month labels known by month 59. Selection feature
-  months are 60–83, labels known by 95. Final test feature months are 96–107. The final test
-  is reported after selection, never used to choose the model. These are zero-based months.
-- The 0–100 display is a fixed monotone transformation of model log-odds anchored to the
-  training distribution, followed by the original financial caps. Probabilities are calibrated
-  separately. Data-quality and integrity gates still override publication.
-- Details and Validation show learned coefficients and out-of-time results. Coefficient
-  percentages are relative magnitudes, not causal importance or changes in default probability.
+Two constructed operating histories experience identical two-month sales shocks of 45%, with different recovery speeds, cost flexibility, collection responses and reliance on additional borrowing. Grit is calculated from those histories.
 
-## Lending changes
+Holding current financial underwriting inputs constant gives Genius **65** for both and Grit approximately **74 versus 54**. For a ₹5 lakh, 60-day reference request, the illustrative rates are **14.82% versus 14.95%**, with the same supported amount.
 
-- Borrow starts with user inputs and an explicit calculation action.
-- Risk-based pricing, affordability, fees and the schedule share one complete lender-policy
-  context: sector, size, tier, tenure, security, market regime and effective date.
-- Medium-term capacity uses operating cash flow plus interest already deducted, less capex
-  and drawings, then a configurable stress haircut. Existing interest/principal commitments,
-  debt coverage, liabilities/net worth and an estimated collateral advance limit constrain it.
-  All capex is deducted conservatively; maintenance/expansion separation needs better data.
-- Short-term repayment checks use stressed collections, current cash above a fixed-cost reserve,
-  operating commitments and existing debt payments. This is a cash-flow approximation, not
-  a complete transaction-level forecast or a validated causal loan-performance model.
-- Amount and term use the same quote rate as the repayment calculation. A larger request is
-  constrained by post-loan affordability; no unvalidated loan-amount PD multiplier is invented.
-- Annual facility fees are charged in full on the requested facility, rather than shown as a
-  prorated share of a draw. Term-loan anniversary fees appear in the schedule and affordability.
-  Shock-line reservation fees are included. Taxes and external charges need lender disclosure.
-- Effective annual cost uses the actual illustrated cash flows. It is explicitly **not** a
-  regulatory KFS APR. Interest and fees are separate, and upfront fees reduce cash received.
-- Quotes are conditional illustrations. There are no live Zoho, GST, bank, bureau, verification,
-  collateral-valuation, lender-approval, disbursement or contractual repricing integrations.
+The difference comes from an **assumed demo lender policy**: recent, completed recovery evidence may earn a capped margin concession. It does not change Genius or calibrated default probability, and Grit's overlapping financial-capacity indicators do not earn an additional concession. This scenario demonstrates a policy mechanism; it is not evidence that Grit predicts real defaults.
 
-## Replacing the synthetic data
+## Method and boundaries
 
-Production requires permissioned financial snapshots linked to actual loan outcomes, with
-outcome observation dates and records from the time of each decision. Prepare the same
-financial ratings and past-only recovery features, then refit and recalibrate using matured,
-chronological training/validation/test partitions. This release supplies the training and
-selection implementation, not access to real borrowers or a prevalidated lender model.
-Independent firms, sectors, calibration, selection bias, default losses and new-loan affordability
-must be evaluated before any lending use. Repeated firm-months are not independent borrowers.
+- Financial-model coefficients are learned from **synthetic** outcomes. Indicator-rating thresholds, Grit weights, cash-flow stress assumptions and lender-policy settings remain design assumptions.
+- Model evaluation uses chronological training, validation and test periods. Results demonstrate behaviour in the simulated setting, not performance on real borrowers.
+- Genius is a prototype assessment, not an official credit-bureau rating. Borrowing results are conditional illustrations, not lender approvals, loan offers or regulatory Key Facts Statements.
+- The app has no live banking, GST, bureau, collateral-verification, approval or disbursement integrations. A deployed product would require verified records, appropriate consent, lender participation and validation on real outcomes.
+- Effective annual cost is an illustrated cash-flow calculation; a lender must disclose applicable taxes, third-party costs and contractual terms.
+
+## Repository
+
+```text
+genius/                         Financial analysis, scoring, resilience, lending and UI
+config/                         Account keywords and import configuration
+samples/                        Synthetic CSV and Excel demo records
+tests/                          Accounting, scoring, recovery and lending checks
+tools/                          Demo-data generation and notebook packaging
+Genius_v5_request_based.ipynb    Single self-contained notebook
+requirements.txt                Python dependencies
+run.py                          Application launcher
+```
+
+Generated databases, runtime uploads and local caches are excluded from version control.
 
 ## Tests
 
-```sh
+```bash
 python -m pytest -q tests
 ```
 
-`tests/test_v5_lending.py` covers request validation, smaller alternatives, context overrides,
-full facility fees, amortisation, renewal fees, collateral, cash-flow constraints, missing recovery
-evidence, data-quality gates, financial caps and removal of duplicate Grit rewards.
-
-## UI styling
-
-The original Inter typography, colours and Soft teal theme are retained, with focused improvements to summary-card sizing and responsive layout. The app defaults to light mode to match those light surfaces; native Gradio hover styles are used without custom colour overrides.
-
-Shared notebook previews serve the installed Gradio frontend assets through the existing tunnel, avoiding an observed external-CDN component stylesheet preload failure. The original Soft theme and native hover colours are retained.
-
-## Separate-score release checks
-
-The financial-only cache can be migrated without refitting coefficients or rewriting outcomes.
-Other obsolete caches rebuild. The synthetic default validation tables validate the financial
-model only; they do not validate the new assumed recovery concession. Calibrate the policy
-with real, dated loan outcomes before production use.
-
-The latest verification passed all 46 tests (15 original, 25 lending regressions, 6 separate-resilience checks).
+The suite covers accounting consistency, historical-data boundaries, score publication, financial caps, separate resilience evidence, request validation, affordability, fees, collateral and repayment calculations.
